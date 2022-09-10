@@ -10,6 +10,6 @@ $rateLimiter = new RateLimiter();
 $rateLimiter->setLimit('index', 60, 100);
 
 // This way, Rate Limiter will call function named over_requested_fallback
-// if a user exceed the limit.
+// if a user exceeds the limit.
 $rateLimiter->setLimit('index', 60, 100, 'over_requested_fallback');
 ```
